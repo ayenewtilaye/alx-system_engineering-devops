@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir my_dir_ayenew -m =751
+mikdir -m=751 my _dir
