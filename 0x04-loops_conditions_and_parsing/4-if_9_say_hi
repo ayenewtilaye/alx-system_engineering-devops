@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-#Displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.
+# displays Holberton School 10 times.
 
-index=0
-
-while ((index < 10));
+COUNTER=0
+while [ $COUNTER -lt 11 ]
 do
-    if ((index==9));
+    if [ $COUNTER = 9 ]
     then
-	echo "Hi"
+        echo "Hi"
+    else
+        echo "Holberton School"
     fi
-    echo "Holberton School"
-    ((index++))
+    let COUNTER+=1
 done
